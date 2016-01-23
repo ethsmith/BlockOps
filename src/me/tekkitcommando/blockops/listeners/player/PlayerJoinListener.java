@@ -28,7 +28,7 @@ public class PlayerJoinListener extends GameListener {
     public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
 
-        GameHandler.setCanStart(Bukkit.getOnlinePlayers().size() >= 8);
+        GameHandler.setCanStart(Bukkit.getOnlinePlayers().size() >= 2);
 
         LocationUtil.spawnTp(player);
         InventoryUtil.clearInventory(player);
