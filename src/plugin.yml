@@ -1,0 +1,10 @@
+name: BlockOps-LMS
+main: me.tekkitcommando.blockops.LMS
+version: 0.0.1
+author: TekkitCommando
+description: Block Ops Last Man/Team Standing Plugin.
+website:  http://www.tekkitcommando.me
+
+permissions:
+  blockops.kits.<kit>:
+    description: Allows players to select kits.
