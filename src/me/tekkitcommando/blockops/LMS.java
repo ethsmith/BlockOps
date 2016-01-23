@@ -1,6 +1,7 @@
 package me.tekkitcommando.blockops;
 
 import me.tekkitcommando.blockops.handlers.KitHandler;
+import me.tekkitcommando.blockops.listeners.entity.EntityDamageByEntity;
 import me.tekkitcommando.blockops.listeners.inventory.InventoryClickListener;
 import me.tekkitcommando.blockops.listeners.player.*;
 import me.tekkitcommando.blockops.threads.GameTimer;
@@ -39,6 +40,7 @@ public class LMS extends JavaPlugin {
         pm.registerEvents(new PlayerDeathListener(this), this);
         pm.registerEvents(new PlayerInteractListener(this), this);
         pm.registerEvents(new InventoryClickListener(this), this);
+        pm.registerEvents(new EntityDamageByEntity(this), this);
     }
 
     public void initConfig() {
